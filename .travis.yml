@@ -17,6 +17,8 @@ script:
 - cp travis_local_settings.py local_settings.py
 - python ./manage.py test --keepdb
 deploy:
- provider: heroku
- app: decide-cli-p7
- strategy: git
+  provider: heroku
+  app: decide-cli-p7
+  strategy: git
+  api_key:
+    secure: pzNwrl9gx7ixmOBJ52IYQoeauzWUbq7Y3/n4cBu32RSCz8hYzkbnAKv4Wjen0RChVrA10sGnWFNupe771LYdXj3h+bUBH8hyrNcoeGw2HoSQoUUXfF5AYGP556wDD4KkWMRdGNbjLwj3upS7ACFD+09XiK79IX73G0RJpKzuzWtsZejtLffPfnJjy79a/+FYzSGCpYXLMOhtPZt+CEEXHt/y/nozb7cBhm/8w58VWbBEIxD6MZQ5hak7TNiVwN8WmTrr+qp3qlaeT1/2fE/myFBa/oNyRgG+X5wFd6eo0wG77+Fazm7WcLMI+UjLgFLWIWdgNSq3eU2b3ltnMEiX0lq23HNL+WMF2qDNGpqnVu5j8J2Tq5MefkfvummLjVq4OylMILb0faYIei2f/iWFWxIHX94so31Jk+m2FsLRURwzt1MEjsfpNzkJsuqhQYVBwNEq14TFCOQLl8ha1Z+EABnC2GE9k90jLPjxeRN7ExinLOc4kGSByDZLFCPbQEOOlQWfEDIE4T62xJehOQF/0wqFtYCE87ClTULBt+LwxV4MSbMx8hXDPdDwH9Khi+MBsTw77Ep8+mtzG2KpPOwz71Cy4eF7H5i4U4RKRbsVTQbcZZWX5pkdrF+LKak2b8BJ0y5xZ/ffKPwt8hXhmWTemfloIJaNDc2/YUuG9Rs46CE=
