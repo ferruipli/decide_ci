@@ -72,7 +72,7 @@ MODULES = [
 ]
 
 #BASEURL = 'http://localhost:8000'
-BASEURL = 'http://decide-cli-p7.herokuapp.com'
+BASEURL = 'https://decide-cli-p7.herokuapp.com'
 
 APIS = {
     'authentication': BASEURL,
